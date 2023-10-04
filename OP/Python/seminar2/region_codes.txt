@@ -1,0 +1,4 @@
+812|Saint_Petersburg
+862|Krasnodar_region
+383|Novosibirsk_region
+855|Naberezhnye_Chelny
