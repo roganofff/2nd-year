@@ -25,3 +25,5 @@ class Car:
 
     def __str__(self) -> str:
         return f'{self.__class__.__name__} {self.model} {self.reg_number} {self.service_class}'
+
+print(Car.mro())

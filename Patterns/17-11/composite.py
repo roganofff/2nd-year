@@ -60,7 +60,7 @@ class Case:
     @staticmethod
     def check_stationery(item: Stationery) -> None:
         if not isinstance(item, Stationery):
-                raise TypeError(f'Case expects Stationery instances, not {type(item).__name__}')
+            raise TypeError(f'Case expects Stationery instances, not {type(item).__name__}')
 
     @stationery.setter
     def stationery(self, stationery: tuple[Stationery] | list[Stationery]) -> None:

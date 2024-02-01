@@ -14,7 +14,7 @@ def add_cat(func: Callable) -> Callable:
 def name():
     return 'Yehor Roganoff'
 
-print(name())
+# print(name())
 
 import time
 
@@ -24,12 +24,12 @@ def log_start(func: Callable) -> Callable:
         return func(*args, **kwargs)
     return wrapper
 
-@log_start
+# @log_start
 def sum_two(first: int|float, second: int|float) -> int|float:
     """Sum the two numbers."""
     return first.__add__(second)
 
 decorated_sum = log_start(sum_two)
 
-print(sum_two.__doc__)
-print(decorated_sum.__doc__)
+# print(decorated_sum(1, 3))
+print(log_start(sum_two)(1, 3))
